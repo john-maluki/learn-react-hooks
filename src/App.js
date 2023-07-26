@@ -6,6 +6,7 @@ import Counter from "./hooks/use_refs/Counter";
 import LoginForm from "./hooks/use_refs/LoginForm";
 import Ticker from "./hooks/use_refs/Ticker";
 import Counter10 from "./hooks/reduce_context/Counter10";
+import ChangeTheme from "./hooks/use_memo/ChangeTheme";
 
 function App() {
   const [transactions, setTransactions] = useState([]);
@@ -26,7 +27,8 @@ function App() {
       {/* <LoginForm /> */}
 
       {/* <Transactions transactions={transactions} /> */}
-      <Counter10 />
+      {/* <Counter10 /> */}
+      <ChangeTheme />
     </div>
   );
 }
