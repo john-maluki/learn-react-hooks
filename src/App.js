@@ -7,6 +7,7 @@ import LoginForm from "./hooks/use_refs/LoginForm";
 import Ticker from "./hooks/use_refs/Ticker";
 import Counter10 from "./hooks/reduce_context/Counter10";
 import ChangeTheme from "./hooks/use_memo/ChangeTheme";
+import ChangeThemeNumber from "./hooks/use_callback/ChangeThemeNumber";
 
 function App() {
   const [transactions, setTransactions] = useState([]);
@@ -28,7 +29,8 @@ function App() {
 
       {/* <Transactions transactions={transactions} /> */}
       {/* <Counter10 /> */}
-      <ChangeTheme />
+      {/* <ChangeTheme /> */}
+      <ChangeThemeNumber />
     </div>
   );
 }
